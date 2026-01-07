@@ -8,9 +8,9 @@ html {
 
 body {
   background-color: rgb(201, 201, 201);
-  margin: 0 150 0 150;
+  margin: 25px 150px 0px 150px;
   border-color: black;
-  border-width: 0 1px 0 1px;
+  border-width: 1px;
   border-style: solid;
   padding: 18px;
 }
