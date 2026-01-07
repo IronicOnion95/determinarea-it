@@ -4,8 +4,8 @@ const TRezultat = document.getElementById("T");
 const ITRezultat = document.getElementById("IT");
 const form = document.getElementById("form");
 const val18_val30 = [
-  1, 1.5, 2.5, 4, 6, 9, 13, 21, 33, 52, 84, 130, 0.21, 0.33, 0.52, 0.84, 1.3,
-  2.1, 3.3,
+  1, 1.5, 2.5, 4, 6, 9, 13, 21, 33, 52, 84, 130, 210, 330, 520, 840, 1300,
+  2100, 3300,
 ];
 const val18_val30Obj = {
   1: 0,
@@ -20,17 +20,17 @@ const val18_val30Obj = {
   52: 9,
   84: 10,
   130: 11,
-  0.21: 12,
-  0.33: 13,
-  0.52: 14,
-  0.84: 15,
-  1.3: 16,
-  2.1: 17,
-  3.3: 18,
+  210: 12,
+  330: 13,
+  520: 14,
+  840: 15,
+  1300: 16,
+  2100: 17,
+  3300: 18,
 };
 const val30_val50 = [
-  1, 1.5, 3.5, 4, 7, 11, 16, 25, 39, 62, 100, 160, 0.25, 0.39, 0.62, 1, 1.6,
-  2.5, 3.9,
+  1, 1.5, 3.5, 4, 7, 11, 16, 25, 39, 62, 100, 160, 250, 390, 620, 1000, 1600,
+  2500, 3900,
 ];
 const val30_val50Obj = {
   1: 0,
@@ -45,13 +45,13 @@ const val30_val50Obj = {
   62: 9,
   100: 10,
   160: 11,
-  0.25: 12,
-  0.39: 13,
-  0.62: 14,
-  1: 15,
-  1.6: 16,
-  2.5: 17,
-  3.9: 18,
+  250: 12,
+  390: 13,
+  620: 14,
+  1000: 15,
+  1600: 16,
+  2500: 17,
+  3900: 18,
 };
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -76,7 +76,7 @@ form.addEventListener("submit", function (e) {
         if (val30_val50[i] === T)
           treaptaDePrecizie = val30_val50Obj[val30_val50[i]];
     }
-    TRezultat.value = T;
-    ITRezultat.value = treaptaDePrecizie;
+    TRezultat.value = T + "µm";
+    ITRezultat.value = "IT" + treaptaDePrecizie;
   }
 });
