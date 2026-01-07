@@ -1,3 +1,35 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+html {
+  background-color: rgb(235, 235, 235);
+}
+
+body {
+  background-color: rgb(201, 201, 201);
+  margin: 0 150 0 150;
+  border-color: black;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  padding: 18px;
+}
+h1 {
+  text-align: center;
+}
+form p {
+  margin-bottom: 4px;
+}
+form {
+  width: fit-content;
+  align-items: center;
+}
+input[type="submit"] {
+  width: 200px;
+  height: 40px;
+  margin: 18px 0 6px 0;
+  background-color: lightgreen;
+}
+form input {
+  width: 200px;
+}
