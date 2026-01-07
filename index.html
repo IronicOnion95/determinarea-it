@@ -11,20 +11,20 @@
 
       <h1>Determinarea treptei de precizie pe baza dimensiunii nominale și a abaterilor individuale </h1>
       <hr>
-        <form>
+        <form id = "form">
             <p>Introduceti dimensiunea nominala </p>
             <input type="number" placeholder = "Dimensiunea nominala" id = "dim" min = 20 max = 50>
             <br>
 
             <p>Introduceti abaterea inferioara </p>
-            <input type="number" placeholder = "Abaterea inferiaora" id = "Ai">
+            <input type="number" placeholder = "Abaterea inferiaora" id = "Ai" step=".01">
             <br>
 
             <p>Introduceti abaterea superioara </p>
-            <input type="number" placeholder = "Abaterea superioara" id = "As">
+            <input type="number" placeholder = "Abaterea superioara" id = "As" step=".01">
             <br> 
 
-            <input type="submit" value = "Ok">
+            <input type="submit" value = "Ok" id = "btn">
         </form>
       <hr>
         <p>Toleranta calculata </p>
@@ -33,6 +33,6 @@
 
         <p>Treapta de toleranta </p>
         <input readonly id = "IT">
-
+      <script src = "script.js"></script>
     </body>
 </html>
